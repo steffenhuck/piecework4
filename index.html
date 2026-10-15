@@ -1,3 +1,8 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Piecework: Maps</title>
 <meta name="claude:viewport-fit-sides" content="cover">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -43,6 +48,14 @@ canvas#table.dragging { cursor: grabbing; }
 footer { text-align: center; font-size: .78rem; }
 footer a { color: var(--muted); font-style: italic; text-decoration: none; }
 </style>
+<style>
+:root { padding-top: env(safe-area-inset-top, 0px); padding-bottom: env(safe-area-inset-bottom, 0px); -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
+html, body { margin: 0; }
+body { font-size: 14px; }
+[hidden] { display: none !important; }
+</style>
+</head>
+<body>
 
 <div class="top">
   <h1>Piecework <span>Maps Edition</span></h1>
@@ -1198,4 +1211,5 @@ Promise.race([
   new Promise(res => setTimeout(res, 2500))
 ]).catch(() => {}).then(newGame);
 </script>
-
+</body>
+</html>
